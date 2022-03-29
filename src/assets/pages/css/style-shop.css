@@ -12,10 +12,10 @@ body.ecommerce {
 .ecommerce h2 {
 	font-size: 20px;
 }
-.ecommerce .content-page h2, 
-.ecommerce .content-page h3, 
-.ecommerce .content-page h4, 
-.ecommerce .content-page h5, 
+.ecommerce .content-page h2,
+.ecommerce .content-page h3,
+.ecommerce .content-page h4,
+.ecommerce .content-page h5,
 .ecommerce .content-page h6 {
 	padding-top: 10px;
 }
@@ -27,7 +27,7 @@ body.ecommerce {
 	font-size: 17px;
 	margin-bottom: 4px;
 }
-.ecommerce .content-page h5, 
+.ecommerce .content-page h5,
 .ecommerce .content-page h6 {
 	font: 700 15px "Open Sans", Arial, sans-serif;
 	margin-bottom: 2px;
@@ -90,7 +90,7 @@ Header and header elements
 .ecommerce .reduce-header .header-navigation > ul > li > .dropdown-menu {
 	margin-top: -3px;
 }
-.ecommerce .reduce-header .header-navigation > ul > li.dropdown:hover > a:after { 
+.ecommerce .reduce-header .header-navigation > ul > li.dropdown:hover > a:after {
   bottom: 0;
 }
 
@@ -131,7 +131,7 @@ Header and header elements
 /* Top cart block */
 .header .top-cart-block {
 	float: right;
-	margin-top: 30px;
+	margin-top: 25px;
 	position: relative;
 	font: 400 13px 'Open Sans', Arial, sans-serif;
 }
@@ -193,14 +193,14 @@ Header and header elements
 	-moz-transition: opacity .3s ease-in-out;
 	-webkit-transition: opacity .3s ease-in-out;
 }
-.top-cart-content:after { 
+.top-cart-content:after {
 	top: -8px;
-	width: 0; 
+	width: 0;
 	height: 0;
 	right: 8px;
-	z-index: 2; 
-	content: " "; 
-	display: block; 
+	z-index: 2;
+	content: " ";
+	display: block;
 	position: absolute;
 	border-bottom: 8px solid #e6400c;
 	border-right: 8px solid transparent;
@@ -462,13 +462,13 @@ Header and header elements
 .checkout-image img {
 	width: 75px;
 }
-.goods-page-price, 
+.goods-page-price,
 .goods-page-total,
 .checkout-price,
 .checkout-total {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
-.goods-page-price strong, 
+.goods-page-price strong,
 .goods-page-total strong,
 .checkout-price strong,
 .checkout-total strong {
@@ -779,7 +779,7 @@ div.radio.disabled span.checked, div.radio.disabled.active span.checked {
 	border: 1px solid #A8AEB3;
 	color: #fff;
 	background: #A8AEB3;
-	padding: 6px 13px; 
+	padding: 6px 13px;
 }
 
 .ecommerce .sidebar {
@@ -1086,7 +1086,7 @@ table .product-quantity .input-group {
 
 .ecommerce .nav-tabs {
 	text-transform: uppercase;
-	font: 16px/1 "PT Sans Narrow", sans-serif;	
+	font: 16px/1 "PT Sans Narrow", sans-serif;
 }
 .ecommerce .nav-tabs > li > a, .ecommerce .nav-tabs > li > a:hover, .ecommerce .nav-tabs > li > a:focus {
 	padding: 5px 15px 3px;
@@ -1139,7 +1139,7 @@ table .product-quantity .input-group {
 	margin-bottom: 5px;
 	position: relative;
 }
-.review-item-submitted strong, 
+.review-item-submitted strong,
 .review-item-submitted em {
 	display: block;
 }
