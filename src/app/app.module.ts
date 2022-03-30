@@ -7,6 +7,18 @@ import { ShopCheckoutComponent } from './pages/shop-checkout.component';
 import { ShopHomeComponent } from './pages/shop-home.component';
 import { ShopAboutComponent } from './pages/shop-about.component';
 import { ShopAccountComponent } from './pages/shop-account.component';
+import { ShopContactsComponent } from './pages/shop-contacts.component';
+import { ShopFaqComponent } from './pages/shop-faq.component';
+import { ShopGoodsCompareComponent } from './pages/shop-goods-compare.component';
+import { ShopItemComponent } from './pages/shop-item.component';
+import { ShopPrivacyPolicyComponent } from './pages/shop-privacy-policy.component';
+import { ShopProductListComponent } from './pages/shop-product-list.component';
+import { ShopSearchResultComponent } from './pages/shop-search-result.component';
+import { ShopShoppingCartComponent } from './pages/shop-shopping-cart.component';
+import { ShopShoppingCartNullComponent } from './pages/shop-shopping-cart-null.component';
+import { ShopStandartFormsComponent } from './pages/shop-standart-forms.component';
+import { ShopTermsConditionsPageComponent } from './pages/shop-terms-conditions-page.component';
+import { ShopWishlistComponent } from './pages/shop-wishlist.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +26,19 @@ import { ShopAccountComponent } from './pages/shop-account.component';
     ShopCheckoutComponent,
     ShopHomeComponent,
     ShopAboutComponent,
-    ShopAccountComponent
+    ShopAccountComponent,
+    ShopContactsComponent,
+    ShopFaqComponent,
+    ShopGoodsCompareComponent,
+    ShopItemComponent,
+    ShopPrivacyPolicyComponent,
+    ShopProductListComponent,
+    ShopSearchResultComponent,
+    ShopShoppingCartComponent,
+    ShopShoppingCartNullComponent,
+    ShopStandartFormsComponent,
+    ShopTermsConditionsPageComponent,
+    ShopWishlistComponent
   ],
   imports: [
     BrowserModule,
