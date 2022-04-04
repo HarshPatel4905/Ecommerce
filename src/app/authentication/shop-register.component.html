@@ -1,0 +1,169 @@
+<div class="main">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a routerLink="">Home</a></li>
+      <li class="active">Register</li>
+    </ul>
+    <!-- BEGIN SIDEBAR & CONTENT -->
+    <div class="row margin-bottom-40">
+      <!-- BEGIN SIDEBAR -->
+
+      <!-- END SIDEBAR -->
+
+      <!-- BEGIN CONTENT -->
+      <div class="col-md-9 col-sm-7">
+        <h1>Register</h1>
+        <div class="content-form-page">
+          <form
+            role="form"
+            [formGroup]="registerForm"
+            (ngSubmit)="onSubmit()"
+            class="form-horizontal form-without-legend"
+          >
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="first-name"
+                >First Name <span class="require">*</span></label
+              >
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  formControlName="firstName"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && registerForm.controls['firstName'].errors
+                  }"
+                  class="form-control"
+                />
+                <div
+                  *ngIf="submitted && registerForm.controls['firstName'].errors"
+                  class="text-danger"
+                >
+                  <div
+                    *ngIf="
+                      submitted &&
+                      registerForm.controls['firstName'].errors['required']
+                    "
+                  >
+                    First Name is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="last-name"
+                >Last Name <span class="require">*</span></label
+              >
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  formControlName="lastName"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && registerForm.controls['lastName'].errors
+                  }"
+                  id="first-name"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="email"
+                >E-Mail <span class="require">*</span></label
+              >
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  formControlName="email"
+                  id="email"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && registerForm.controls['email'].errors
+                  }"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="mobile"
+                >Mobile <span class="require">*</span></label
+              >
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  formControlName="mobile"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && registerForm.controls['mobile'].errors
+                  }"
+                  id="mobile"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="password"
+                >Password <span class="require">*</span></label
+              >
+              <div class="col-lg-8">
+                <input
+                  type="password"
+                  formControlName="password"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted && registerForm.controls['password'].errors
+                  }"
+                  id="password"
+                  class="form-control"
+                />
+              </div>
+
+              <div
+                *ngIf="submitted && registerForm.controls['password'].errors"
+                class="text-danger"
+              >
+                <div
+                  *ngIf="
+                    submitted &&
+                    registerForm.controls['password'].errors['required']
+                  "
+                >
+                  Password is require.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="password"
+                >Confirm Password <span class="require">*</span></label
+              >
+              <div class="col-lg-8">
+                <input
+                  type="password"
+                  id="conformpassword"
+                  class="form-control"
+                  formControlName="confirmPassword"
+                  [ngClass]="{
+                    'is-invalid':
+                      submitted &&
+                      registerForm.controls['confirmPassword'].errors
+                  }"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col-lg-8 col-md-offset-2 padding-left-0 padding-top-20"
+              >
+                <button class="btn btn-primary" type="submit">Continue</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- END CONTENT -->
+    </div>
+    <!-- END SIDEBAR & CONTENT -->
+  </div>
+</div>

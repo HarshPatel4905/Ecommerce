@@ -19,6 +19,9 @@ import { ShopShoppingCartNullComponent } from './pages/shop-shopping-cart-null.c
 import { ShopStandartFormsComponent } from './pages/shop-standart-forms.component';
 import { ShopTermsConditionsPageComponent } from './pages/shop-terms-conditions-page.component';
 import { ShopWishlistComponent } from './pages/shop-wishlist.component';
+import { ShopRegisterComponent } from './authentication/shop-register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ForgetpasswordComponent } from './authentication/forgetpassword.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +41,15 @@ import { ShopWishlistComponent } from './pages/shop-wishlist.component';
     ShopShoppingCartNullComponent,
     ShopStandartFormsComponent,
     ShopTermsConditionsPageComponent,
-    ShopWishlistComponent
+    ShopWishlistComponent,
+    ShopRegisterComponent,
+    ForgetpasswordComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,5 @@
+import { ForgetpasswordComponent } from './authentication/forgetpassword.component';
+import { ShopRegisterComponent } from './authentication/shop-register.component';
 import { ShopWishlistComponent } from './pages/shop-wishlist.component';
 import { ShopTermsConditionsPageComponent } from './pages/shop-terms-conditions-page.component';
 import { ShopStandartFormsComponent } from './pages/shop-standart-forms.component';
@@ -32,6 +34,9 @@ const routes: Routes = [
   { path: 'shop-shopping-cart', component: ShopShoppingCartComponent },
   { path: 'shop-standart-forms', component: ShopStandartFormsComponent },
   { path: 'shop-shopping-cart-null', component: ShopShoppingCartNullComponent },
+  { path: 'shop-register', component: ShopRegisterComponent },
+  { path: 'shop-forgetpassword', component: ForgetpasswordComponent },
+
   {
     path: 'shop-terms-conditions-page',
     component: ShopTermsConditionsPageComponent,
